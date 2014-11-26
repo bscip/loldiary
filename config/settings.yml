@@ -1,0 +1,10 @@
+defaults: &defaults
+  riot: 
+    url: 'https://na.api.pvp.net'
+    key: '1284331e-2342-49d1-944b-51a3e4138f88'
+
+development: &development
+  <<: *defaults
+
+production: &production
+  <<: *defaults
