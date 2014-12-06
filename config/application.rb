@@ -21,7 +21,6 @@ module Loldiary
     # config.i18n.default_locale = :oe
 
     config.browserify_rails.commandline_options = "-t reactify --extension=\".js.jsx\""
-    config.assets.initialize_on_precompile = false
 
   end
 end
