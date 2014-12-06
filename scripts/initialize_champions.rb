@@ -4,7 +4,6 @@ require 'httparty'
 
 endpoint = 'api/lol/static-data/na/v1.2/champion'
 
-puts "uhh"
 resp = HTTParty.get("#{Settings.riot.url}/#{endpoint}?api_key=#{Settings.riot.key}")
 if resp.code == 200
   resp_data = JSON.parse(resp.body)

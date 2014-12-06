@@ -47,3 +47,6 @@ gem 'httparty'
 
 gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 gem 'browserify-rails', '~> 0.4.1'
+
+
+gem 'twitter'
