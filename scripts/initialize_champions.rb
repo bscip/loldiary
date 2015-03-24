@@ -19,8 +19,9 @@ if resp.code == 200
         name: champ['name'],
         redis_key: "RIOT_champion_id_#{champ['id'].to_s}"
       }
-      puts champ_data
+      puts champ_resp.to_yaml
       #Champion.create champ_data
+      break;
     else
       puts "#{Settings.riot.url}/#{endpoint}/#{champ['id'].to_s}?champData=all&api_key=#{Settings.riot.key}"
       puts champ_resp.code
